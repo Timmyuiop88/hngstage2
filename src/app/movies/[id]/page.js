@@ -268,7 +268,7 @@ PG-13
  data-testid="movie-runtime"
  
 >
- {movie.runtime}
+ {movie.runtime} Mins
  </Text>
 
 
