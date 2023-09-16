@@ -15,11 +15,11 @@ import {
   VStack,
   SimpleGrid,
 } from "@chakra-ui/react";
-import { AiFillPlayCircle } from "react-icons/ai";
+import { BsChevronRight } from "react-icons/bs";
 import Movie from "./movie";
 import axios from "axios";
 import { useState, useEffect } from "react";
-const client = 'https://api.themoviedb.org/3/movie/popular?api_key=eb2d7051638f3d401df1794b8cdac12d&language=en-US&page=1?limit=10'
+const client = 'https://api.themoviedb.org/3/movie/top_rated?api_key=eb2d7051638f3d401df1794b8cdac12d&language=en-US&page=1?limit=10'
 
 const options = {
   method: 'GET',
@@ -85,11 +85,13 @@ export default function Featured(){
   alignItems={'center'}
 >
 <Text
+display={'flex'}
+alignItems={'center'}
 
 color={'#BE123C'}
  fontSize={'18px'}
  fontWeight={'400'}>
-See more
+See more <BsChevronRight/>
                 </Text>
 </Box>
           

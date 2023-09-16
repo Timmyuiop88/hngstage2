@@ -38,12 +38,10 @@ return(
             >
                 <Box
                 w={'full'}
-                h={'350px'}
-               bgImage={`url('${img}')`}
-                bgPosition="cover"
-                bgRepeat="no-repeat"
-                backgroundSize={["cover", "cover", "cover", "100%"]}
+                h={'auto'}
+  
                 >
+                  <Image      data-testid="movie-poster" src={img} height={'350'}width={'250'} alt="poster image"/>
 
                 </Box>
                 <Text
@@ -69,14 +67,14 @@ return(
       w={"full"}
       maxW={"200px"}
       h={"30px"}
-     
+   
       display={"flex"}
       justifyContent={"space-between"}
     >
       <Box alignItems={"center"} display={"flex"}>
         <Box 
   left={'150'}
-        bottom={'400px'}
+        bottom={'350px'}
       
         position={'relative'}
         h={'50'}
